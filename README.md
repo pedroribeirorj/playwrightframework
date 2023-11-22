@@ -1,4 +1,4 @@
-# playwrightframework
+# Uma implementação baseada em Playwright Framework
 
 [![licence mit](https://img.shields.io/badge/licence-MIT-blue.svg)](./LICENSE)
 
@@ -8,9 +8,24 @@ Este é um framework baseado em playwright.js, tendo como objetivo facilitar a c
    <img src="https://miro.medium.com/v2/resize:fit:646/1*gMiUPuRGC36nxZHe2zthOg.png" />
 </p>
 
-# Estrutura
+# Estrutura Geral
 <p align="center">
    <img src="https://github.com/pedroribeirorj/playwrightframework/blob/main/doc/estrutura_basica.png" />
+</p>
+
+# Estrutura das classes de teste
+<p align="center">
+   <img src="https://github.com/pedroribeirorj/playwrightframework/blob/main/doc/classe_de_teste.png" />
+</p>
+
+# Estrutura das classes do tipo página
+<p align="center">
+   <img src="https://github.com/pedroribeirorj/playwrightframework/blob/main/doc/pages.png" />
+</p>
+
+# Estrutura das classes dsl.js
+<p align="center">
+   <img src="https://github.com/pedroribeirorj/playwrightframework/blob/main/doc/dsl.png" />
 </p>
 
 # FAQ/Perguntas Frequentes

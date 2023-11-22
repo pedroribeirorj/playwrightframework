@@ -53,11 +53,9 @@ export class Home{
 
     }
 
-    async pesquisar(){
-        
+    async pesquisar(){    
         await console.log('[Home] Clicando em pesquisar');
         await this.dsl.click(this.xpath.pesquisar);
-        
     }
 
     async limparPreco(){
