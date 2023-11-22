@@ -30,35 +30,44 @@ Este é um framework baseado em playwright.js, tendo como objetivo facilitar a c
 
 # FAQ/Perguntas Frequentes
 
-## O que é o profissional em T?
-> **R:** é um profissional que, além da sua especialidade, também tem um certo conhecimento em outras áreas que podem facilitar seu próprio trabalho ou o trabalho em equipe. No site do Dev em T da Alura há bastante a respeito, além de artigos e podcasts: https://alura.com.br/dev-em-t
+## Preciso ter conhecimento básico de alguma tecnologia específica?
+> **R:** Conhecimentos básicos de Javascript.js serão importantes para uma melhor compreensão do framework. Já a nível de Playwright.js,
+> a ferramenta contém uma documentação muito bem descrita, que poderá auxiliar nos primeiros passos.
+
+## Quais são as dependências do projeto?
+> **R:** As dependências estão no arquivo package.json, na raiz do projeto. Entre elas estão o playwright.js (v1.33) e csv-parse (v5.5.2)
+
+## Existe algum link para as documentações de apoio?
+> **R:** Playwright.js: https://playwright.dev/docs/intro  
+> CSV-Parse.js: https://csv.js.org/project/examples/
+
+## Como posso criar meu primeiro caso de teste?
+> **R:** O projeto contém um exemplo de uso (imovirtual.spec.js). Nele você poderá observar toda a implementação de um caso de teste, assim como a sua relação> com as páginas acessadas, onde estão os locators e steps, que por sua vez se comunicam com a dsl.js (responsável pelas ações em playwright).
+
+## Como gero evidências/report da execução?
 
 
-## Posso gerar meu próprio guia usando esse repositório?
-> **R:** Sim! Só pedimos que você faça um link para https://techguide.sh 😁 e respeite a licença de uso. Futuramente o site suportará carregar YAMLs de pessoas, empresas e até de outras escolas (esboço da ideia nessa issue: https://github.com/alura/techguide/issues/13)
+## Como faço para alterar as colunas da planilha e refletir tais mudanças no código?
 
+## Como posso executar os casos de teste?
+> **R:** O framework utiliza as execuções nativas do Playwright. Entre elas, temos:
+> - [X] Executar todas as suítes de teste - npx playwright test
+> - [X] Executar uma única suíte de teste - npx playwright test [teste].spec.js
+> - [X] Executar em um browser específico - npx playwright test --project webkit
 
-## Posso sugerir novas carreiras?
-> **R:** Sim! Use o mecanismo de contribuição do Github. Nesse momento estamos focados em corrigir erros e melhorar as carreiras existentes.
-
-> [Por enquanto você pode criar o seu próprio! basta seguir esse tutorial](./docs/br/criando-seu-guide.md)
+> Para mais tipos de execuções, consulte a documentação: https://playwright.dev/docs/running-tests
 
 # About the Project/Sobre o Projeto
 
 ## Contributing/Contribuir
 
 ### O que devo ter em mente antes de abrir um PullRequest?
-- Esse é um projeto opensource feito pela Alura para a comunidade e contribuições são bem vindas.
+- Esse é um projeto opensource e contribuições são bem vindas.
 - Para aumentar a chance de a sua contribuição ser aprovada, escolha um título legal, simples e explicativo para os itens, e siga a formatação correta dos arquivos.
-- Nesse momento não estamos buscando carreiras novas. Queremos refinar as que já temos.
-- Mais interessante seria ajudar com o código e projeto em si
-- 🇧🇷: Quer contribuir com o projeto? [Confira o passo a passo](./CONTRIBUTING.md)
 
 ### Próximos Passos?
 
-- [X] Exportar o T para você poder trilhar seu caminho e contar suas histórias
-- [ ] Exportar o T em formato de roteiro de estudos
-- [ ] Suporte completo em Inglês
+- [X] Faça o clone do projeto, execute o teste imovirtual.spec.js em modo debug, para avaliar com cuidado cada ação do código. Isto facilitará a absorção do conhecimento 
 
 ## License/Licença do Projeto
 
